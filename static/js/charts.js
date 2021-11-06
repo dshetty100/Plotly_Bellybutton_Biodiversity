@@ -50,6 +50,10 @@ function buildMetadata(sample) {
       PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
     });
 
+    // Build the Gauge Chart
+    buildGauge(result.wfreq);
+  
+
   });
 }
 
@@ -121,25 +125,26 @@ function buildCharts(sample) {
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout);
 
-// 4. Create the trace for the gauge chart.
+    // 4. Create the trace for the gauge chart.
     var gaugeData = [
       {
       domain: { x: [0, 1], y: [0, 1] },
       value: parseFloat(wfreq),
-      title: { text: `Weekly Washing Frequency ` },
+      title: { text: `Belly Button Washing Frequency` },
       type: "indicator",
         
       mode: "gauge+number",
-      gauge: { axis: { range: [null, 9] },
+      gauge: { axis: { range: [null, 10] },
                 steps: [
                  { range: [0, 2], color: "yellow" },
                  { range: [2, 4], color: "cyan" },
                  { range: [4, 6], color: "teal" },
                  { range: [6, 8], color: "lime" },
-                 { range: [8, 9], color: "green" },
-               ]}
+                 { range: [8, 10], color: "green" },
+                ]
+              }
             
-        }
+      }
     ];
     
     // 5. Create the layout for the gauge chart.
