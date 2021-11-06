@@ -1,15 +1,12 @@
 # Plotly_Bellybutton_Biodiversity
 
 ## Overview of Project
-The purpose of this project is to build a webpage that uses JavaScript in the HTML page for displaying UFO sightings data as a table and one that has the ability to filter the data based on multiple criteria (such as, date of sighting, city of a sighting, state of a sighting, country of a sighting, and shape of UFO) as defined by the user. 
-
-For this project, a JavaScript (app.js) was written to builds the HTML table and fills it with data that was stored in data.js as a JavaScript array. The HTML file (index.html) was written to include all the filters for the criterias mentioned above.
-
+Several different species of bacteria colonize our bellybutton. These bateria have ability to synthesize protein that tastes like beef. In this project we analyze data from several volunteers who agreed to provide samples from their navel to identify top 10 bacterial species in human bellybutton. The analysis is important for determining the right kind of micro-organism that can provide the next best taste for synthetic beef.
 
 ## Results
-The user can open the HTML file (index.html) that displays all the data in a table and filter the data based on various criteria.
+The results of the analysis was devployed on a webpage using html and javascript and can be found here: 
 
-For example, one could filter the data by filling the "Enter Date" field with "1/1/2010", "Enter a Country" field with "us", and "Enter a Shape" field with "sphere". This would display all the data related to sightings on 1/1/2010, in the US and that corresponding to spherical shape UFO as shown below
+The display below shows the webpage where users can explore the dataset with the help of interactive charts in the webpage.
 
 ![Figure1](/images/bellybutton_dashboard.png)
 
