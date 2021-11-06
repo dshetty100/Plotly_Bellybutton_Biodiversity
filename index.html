@@ -10,12 +10,15 @@
 </head>
 
 <body>
-
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-md-12 jumbotron text-center"style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url(https://placeimg.com/1000/480/nature)">
         <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <p>Several different species of bacteria colonize our bellybutton. These bateria have ability to synthesize 
+          protein that tastes like beef. In this project we analyze data from several volunteers 
+          who have agreed to provide samples from their navel to identify top 10 bacterial species in human bellybutton. The analysis is 
+          important for determining the right kind of micro-organism that can provide the next best taste for synthetic beef.</p>
+         <p>Use the interactive charts below to explore the dataset</p> 
       </div>
     </div>
     <div class="row">
@@ -32,22 +35,29 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5" jumbotron text-center>
         <div id="bar"></div>
+        <p>The bar chart above displays the top 10 bacterial species (OTUs) when an individual’s ID is selected from the dropdown menu on the left. 
+          Hover over the horizontal bar to display the sample values, the otu ids, and the otu labels</p>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+        <p>The chart above displays the weekly washing frequency's value, and display the value as a measure from 0-10 on the progress bar in the gauge chart for individual ID.</p> 
       </div>
     </div>
+    <p></p>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <p>The bubble chart above show the bacteria culture per sample. Hover over the bubble to display 
+          the sample values, the otu ids, and the otu labels.</p>
       </div>
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/guage.js"></script> 
   <script src="./static/js/charts.js"></script>
 
 </body>
